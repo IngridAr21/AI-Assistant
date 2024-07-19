@@ -3,6 +3,10 @@ Group 5: Personal Assistant
 
 <p>This is the project of group 5 from the University of Maastricht. We developed an application that is a comprehensive NLP tool for summarization and task extraction from conversations, as well as for applying speech recognition.
 
+My tasks:
+- Speech recognition
+- Task classification
+
 ### Setup
 
 <p> Download all the necessary libraries and models.
