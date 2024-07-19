@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #123456;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_2_2_group_5.ToDoPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="618.0" layoutX="-3.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="814.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.24701754748821259" green="0.38390642404556274" blue="0.46315789222717285" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5048780487804877">
+                     <color>
+                        <Color red="0.188226118683815" green="0.35789474844932556" blue="0.28437167406082153" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07058823853731155" green="0.20392157137393951" blue="0.33725491166114807" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="294.0" layoutY="25.0" text="To-Do List" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="48.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="todoField" editable="false" layoutX="53.0" layoutY="92.0" prefHeight="480.0" prefWidth="694.0" text="dss">
+         <font>
+            <Font name="Georgia" size="30.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="returnButton" fitHeight="96.0" fitWidth="102.0" layoutY="-2.0" onMouseClicked="#handleReturnButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/returnButton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

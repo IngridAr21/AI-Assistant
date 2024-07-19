@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.paint.Color?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #2b547e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_2_2_group_5.MainPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="618.0" layoutX="-3.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="814.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.24701754748821259" green="0.38390642404556274" blue="0.46315789222717285" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5048780487804877">
+                     <color>
+                        <Color red="0.188226118683815" green="0.35789474844932556" blue="0.28437167406082153" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07058823853731155" green="0.20392157137393951" blue="0.33725491166114807" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="creditsLabel" layoutX="143.0" layoutY="14.0" prefHeight="36.0" prefWidth="124.0" text="Credits" textAlignment="CENTER" textFill="#ececec">
+         <font>
+            <Font name="Britannic Bold" size="35.0" />
+         </font>
+      </Label>
+      <TextArea accessibleRole="TEXT" editable="false" layoutX="31.0" layoutY="62.0" prefHeight="221.0" prefWidth="348.0" text="Project Members: &#10;&#10;- Bader Khalil &#10;&#10;- Sashank Chapala&#10;&#10;- Huda Humaira&#10;&#10;- Irina Ruzavina&#10;&#10;- Raid Bazyan&#10;&#10;- Kees Vandeneijnden" wrapText="true">
+         <font>
+            <Font name="Britannic Bold" size="15.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="returnButton" fitHeight="64.0" fitWidth="70.0" layoutX="-4.0" onMouseClicked="#handleReturnButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/returnButton.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

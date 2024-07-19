@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #123456;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_2_2_group_5.MainPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="618.0" layoutX="-3.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="814.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.24701754748821259" green="0.38390642404556274" blue="0.46315789222717285" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5048780487804877">
+                     <color>
+                        <Color red="0.188226118683815" green="0.35789474844932556" blue="0.28437167406082153" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07058823853731155" green="0.20392157137393951" blue="0.33725491166114807" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label ellipsisString="Hello" layoutX="112.0" layoutY="140.0" text="Personal Assistant" textAlignment="CENTER" textFill="#ebefe7">
+         <font>
+            <Font name="Britannic Bold" size="65.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="exitButton" accessibleRole="BUTTON" fitHeight="76.0" fitWidth="83.0" layoutX="-5.0" onMouseClicked="#handleExitButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/exitButton1.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="creditsButton" layoutX="613.0" layoutY="554.0" mnemonicParsing="false" onMouseClicked="#handleCreditsButton" prefHeight="45.0" prefWidth="186.0" text="Credits" textAlignment="CENTER" textFill="#434343">
+         <font>
+            <Font name="Britannic Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="guideButton" fitHeight="60.0" fitWidth="38.0" layoutX="762.0" onMouseClicked="#handleGuideButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/QuestionMark.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="inputButton" layoutX="26.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#handleInputButton" text="Audio Input" textFill="#434343">
+         <font>
+            <Font name="Britannic Bold" size="16.0" />
+         </font></Button>
+      <ChoiceBox fx:id="summaryTypes" layoutX="219.0" layoutY="301.0" prefWidth="150.0" />
+      <Button fx:id="summaryButton" layoutX="379.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#handleSummaryButton" text="Summary" textFill="#434343">
+         <font>
+            <Font name="Britannic Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="todoListButton" layoutX="675.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#handleTodoButton" text="To-do list" textFill="#434343">
+         <font>
+            <Font name="Britannic Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="textFileButton" layoutX="31.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#handleTextFieldButton" text="Text Input" textFill="#434343">
+         <font>
+            <Font name="Britannic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="46.0" layoutY="252.0" prefHeight="27.0" prefWidth="63.0" text="Input" textFill="#ebefe7" underline="true">
+         <font>
+            <Font name="Britannic Bold" size="25.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="todoTypes" layoutX="513.0" layoutY="301.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
