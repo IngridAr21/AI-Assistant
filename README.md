@@ -1,11 +1,7 @@
-Por supuesto, aquí tienes el README completo listo para copiar y pegar con el formato Markdown incluido:
-
-````markdown
 # AI Personal Assistant
 
 Turn your audio conversations into clear summaries and actionable to-do lists — an easy way to save time and stay organized.
 
----
 
 ## Features
 
@@ -14,19 +10,15 @@ Turn your audio conversations into clear summaries and actionable to-do lists �
 - **Summarization:** Creates quick summaries of dialogues.  
 - **To-do Lists:** Generates task lists automatically based on what’s said.
 
----
-
 ## Overview
 
 This tool listens to your conversations and pulls out important tasks and summaries. It works well even if the audio isn’t perfect, like with background noise or multiple speakers.
 
----
 
 ## How It Works
 
 We use the Whisper speech recognition model from Hugging Face to transcribe audio into text. After transcription, the system identifies and categorizes tasks in the dialogue using natural language processing and rule-based methods.
 
----
 
 ## Tech & Tools
 
@@ -37,7 +29,6 @@ We use the Whisper speech recognition model from Hugging Face to transcribe audi
 
 The pipeline flows from audio input → transcription → task extraction → output.
 
----
 
 ## Setup & Usage
 
@@ -46,7 +37,7 @@ The pipeline flows from audio input → transcription → task extraction → ou
 
    ```bash
    python main.py
-````
+   ````
 
 3. Wait until you see:
 
@@ -64,7 +55,6 @@ The pipeline flows from audio input → transcription → task extraction → ou
 
 8. Pick a to-do list type and generate your task list.
 
----
 
 ## Example Input Dialogue
 
@@ -73,19 +63,8 @@ Jack: I want to go to the mall.
 Phil: I will pick you up.
 ```
 
----
 
 ## Screenshots & Demo
 
 *(Coming soon!)*
 
----
-
-## Credits
-
-Developed by Group 5, University of Maastricht.
-
-```
-
-¡Listo para pegar y usar! ¿Quieres que te ayude a crear ejemplos de capturas o demos?
-```
