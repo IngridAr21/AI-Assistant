@@ -1,4 +1,4 @@
-# AI Personal Assistant
+# Conversational AI Task Extraction Assistant
 
 Turn your audio conversations into clear summaries and actionable to-do lists — an easy way to save time and stay organized.
 
