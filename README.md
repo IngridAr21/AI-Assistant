@@ -1,23 +1,91 @@
-Personal Assistant
-========
+Por supuesto, aquí tienes el README completo listo para copiar y pegar con el formato Markdown incluido:
 
-<p>This is the project of group 5 from the University of Maastricht. We developed an application that is a comprehensive NLP tool for summarization and task extraction from conversations, as well as for applying speech recognition.
+````markdown
+# AI Personal Assistant
 
-My tasks:
-- Speech recognition
-- Task classification
+Turn your audio conversations into clear summaries and actionable to-do lists — an easy way to save time and stay organized.
 
-### Setup
+---
 
-<p> Download all the necessary libraries and models.
-Open the main.py file (directory) in the terminal and run the command “python main.py”. 
-Once the terminal prints "* Debugger is active!* Debugger PIN: ###-###-###", then run MainPage.java. Press the audio input button to input an audio file (wait for it to process the file, terminal will print "Speech to Text Done!") and then press on Text File to review the text and add names(make it a dialogue), or directly click on the Text File button and write a dialogue. 
-Afterwards, pick a summary type and click on the summary button.
-For the extractive summary, the input is required to contain speaker segmentation.
+## Features
 
-Example:
+- **Speech Recognition:** Converts audio into text.  
+- **Task Extraction:** Finds and organizes tasks from conversations.  
+- **Summarization:** Creates quick summaries of dialogues.  
+- **To-do Lists:** Generates task lists automatically based on what’s said.
 
-Jack: I want go to the mall.
+---
+
+## Overview
+
+This tool listens to your conversations and pulls out important tasks and summaries. It works well even if the audio isn’t perfect, like with background noise or multiple speakers.
+
+---
+
+## How It Works
+
+We use the Whisper speech recognition model from Hugging Face to transcribe audio into text. After transcription, the system identifies and categorizes tasks in the dialogue using natural language processing and rule-based methods.
+
+---
+
+## Tech & Tools
+
+- Python  
+- Hugging Face Transformers (for speech-to-text)  
+- Librosa (audio processing)  
+- Scikit-learn (K-means clustering for speaker separation, optional)  
+
+The pipeline flows from audio input → transcription → task extraction → output.
+
+---
+
+## Setup & Usage
+
+1. Install required libraries and models (details to be added).  
+2. Open a terminal in the project folder and run:
+
+   ```bash
+   python main.py
+````
+
+3. Wait until you see:
+
+   ```
+   * Debugger is active! Debugger PIN: ###-###-###
+   ```
+
+4. Run `MainPage.java` to open the interface.
+
+5. Click the audio input button to upload an audio file and wait for it to process (terminal shows "Speech to Text Done!").
+
+6. Use the Text File button to review or edit the transcript and add speaker names if needed.
+
+7. Select a summary type and click the summary button. *(Extractive summaries require speaker segmentation.)*
+
+8. Pick a to-do list type and generate your task list.
+
+---
+
+## Example Input Dialogue
+
+```
+Jack: I want to go to the mall.  
 Phil: I will pick you up.
+```
 
-Once the summary is made, you can pick a todo list type and then create the todo list.
+---
+
+## Screenshots & Demo
+
+*(Coming soon!)*
+
+---
+
+## Credits
+
+Developed by Group 5, University of Maastricht.
+
+```
+
+¡Listo para pegar y usar! ¿Quieres que te ayude a crear ejemplos de capturas o demos?
+```
